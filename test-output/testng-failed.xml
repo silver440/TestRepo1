@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Listeners.TestsListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.test.TestCases.HomePageTestCases">
+        <methods>
+          <include name="TC_9"/>
+          <include name="TC_8"/>
+          <include name="TC_6"/>
+          <include name="beforeStart"/>
+          <include name="afterFinish"/>
+        </methods>
+      </class> <!-- com.test.TestCases.HomePageTestCases -->
+      <class name="com.test.TestCases.BillingInfoTestCases">
+        <methods>
+          <include name="afterDone"/>
+          <include name="TC_2"/>
+          <include name="TC_1"/>
+          <include name="beforeStart"/>
+        </methods>
+      </class> <!-- com.test.TestCases.BillingInfoTestCases -->
+      <class name="com.test.TestCases.ShopPageTestCases">
+        <methods>
+          <include name="TC_9"/>
+          <include name="TC_7"/>
+          <include name="TC_8"/>
+          <include name="TC_1"/>
+          <include name="TC_2"/>
+          <include name="afterDone"/>
+          <include name="TC_5"/>
+          <include name="TC_6"/>
+          <include name="beforeStart"/>
+          <include name="TC_4"/>
+        </methods>
+      </class> <!-- com.test.TestCases.ShopPageTestCases -->
+      <class name="com.test.TestCases.AccountPageTestCases">
+        <methods>
+          <include name="TC_2"/>
+          <include name="TC_4"/>
+          <include name="beforeStart"/>
+          <include name="TC_3"/>
+          <include name="afterDone"/>
+        </methods>
+      </class> <!-- com.test.TestCases.AccountPageTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="TestEdge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.test.TestCases.HomePageTestCases">
+        <methods>
+          <include name="TC_9"/>
+          <include name="TC_8"/>
+          <include name="TC_6"/>
+          <include name="beforeStart"/>
+          <include name="afterFinish"/>
+        </methods>
+      </class> <!-- com.test.TestCases.HomePageTestCases -->
+    </classes>
+  </test> <!-- TestEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
